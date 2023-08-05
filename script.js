@@ -58,5 +58,5 @@ function popup(){
 function hide(){
     document.querySelector('.tooltip-text').style.opacity='0';
 }
-setTimeout(popup,3000);
-setTimeout(hide,9000);
+setTimeout(popup,1000);
+setTimeout(hide,6000);
