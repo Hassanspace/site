@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 1) 1%, rgba(0, 0, 0, 1) 50%);
+    font-family: 'REM', sans-serif;
+}
+.tooltip-text {
+  opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ffffff;
+   
+    border-radius: 10px;
+    transition: 2s ease;
+    padding: 10px 15px 10px 15px;
+  }
+  
+
+ 
+  
+  #bottom {
+  top: 70px;
+    left: 40%;
+  }
+  
+
+  
+  .hover-text {
+    position: relative;
+    display: inline-block;
+    
+    font-family: Arial;
+    text-align: center;
+  }
+#mynav {
+    z-index: 2;
+    margin-top: -80px;
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 1) 24%, rgba(0, 0, 0, 1) 81%);
+    color: rgb(26, 25, 25);
+    height: 660px;
+    width: 0%;
+    overflow-x: hidden;
+    transition: 1s ease;
+    position: relative;
+    backdrop-filter: blur(5px);
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+nav ul li {
+    padding: 30px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: #a9adb1;
+}
+
+.openbtn {
+    z-index: 1;
+    font-size: 1.5rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.closebtn {
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -50px;
+}
+
+.closebtn:hover {
+    color: rgb(37, 35, 35);
+}
+
+.menu {
+    display: flex;
+    
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 1) 24%, rgba(0, 0, 0, 1) 81%);
+    color: white;
+    height: 80px;
+    box-shadow: 0px 13px 10px -3px rgba(0, 0, 0, 0.603);
+}
+
+.menu ul {
+    display: flex;
+    margin-left: 30%;
+
+
+}
+
+.menu ul li a:hover {
+    color: rgb(177, 166, 166);
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li {
+    list-style: none;
+
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.animate-line {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.animate-line::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.animate-line:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.info-container {
+
+    margin-top: -590px;
+    height: 588px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    margin-top: 91px;
+    font-family: 'REM', sans-serif;
+}
+
+.img {
+    margin-top: 100px;
+}
+
+.hello {
+    color: white;
+    font-size: 2rem;
+}
+
+.name {
+    font-size: 1.6rem;
+    color: white;
+}
+
+#font {
+    font-family: 'Bungee Spice', cursive;
+}
+
+#element {
+    color: white;
+    font-size: 1.5rem;
+}
+.button{
+    margin-top: 20px;
+}
+
+.button button {
+    padding: 10px;
+    border-radius: 15px;
+
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cv {
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease;
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 0.6) 24%, rgba(0, 0, 0, 0.6) 81%);
+}
+
+.hire {
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease;
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 0.6) 24%, rgba(0, 0, 0, 0.6) 81%);
+}
+
+.cv:hover {
+    color: white;
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 0.1) 24%, rgba(0, 0, 0, 0.1) 81%);
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+
+}
+
+.hire:hover {
+    background: rgb(39, 39, 41);
+    background: radial-gradient(circle, rgba(39, 39, 41, 0.1) 24%, rgba(0, 0, 0, 0.1) 81%);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.menu button {
+    margin-top: 20px;
+    margin-left: 100px;
+    border: none;
+    font-weight: bold;
+    background-color: red;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: rgb(165, 4, 4);
+}
+
+.education {
+    color: white;
+    background: rgba(39, 37, 37, 0.479);
+    height: 450px;
+   width: 95%;
+   height: 0;
+    border-radius: 0px 0px 70px 70px;
+    margin-left: 2.5%;
+ overflow: hidden;
+    transition: 1s;
+   
+}
+.education-hide{
+    
+   width: 95%;
+   background: rgba(39, 37, 37, 0.479);
+    display: flex;
+    
+   
+    justify-content: space-evenly;
+    border-radius: 70px 70px 70px 70px;
+    margin-left: 2.5%;
+  
+   
+}
+.education-hide h1{
+    margin-top: 20px;
+}
+.close,.open{
+    font-size: 4rem;
+    color: white;
+    transition: 0.1s ease;
+}
+.close{
+    visibility: hidden;
+    
+}
+.open-close{
+    cursor: pointer;
+   margin-left: 800px;
+    padding: 25px;
+    display: flex;
+}
+.open:hover{
+    color: rgb(121, 113, 113);
+}
+.close:hover{
+    color: rgb(126, 112, 112);
+}
+.education-hide h1 {
+    padding: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.title {
+    margin-left: -200px;
+    display: flex;
+    height: 70px;
+    padding: 10px;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.title p {
+    margin-top: -10px;
+    height: 40px;
+    font-size: 1.3rem;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+.title p:hover {
+    color: rgb(177, 173, 173);
+}
+
+.matric,
+.fsc,
+.graduation {
+    padding: 15px;
+    height: 280px;
+   
+    background: rgba(39, 37, 37, 0.479);
+    transition: 0.5s ease;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.fsc,
+.graduation {
+    opacity: 0;
+
+}
+
+.education-inner {
+    display: flex;
+    margin-top: -30px;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.education-inner h2 {
+    padding: 10px;
+}
+
+.education-inner p {
+    padding: 10px;
+}
+
+.element {
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.element:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 5px;
+
+    animation: underline 4s ease infinite;
+}
+
+
+
+@keyframes underline {
+    0% {
+        width: 0%;
+        background: radial-gradient(circle, rgba(39, 39, 41, 0.1) 24%, rgba(0, 0, 0, 0.1) 81%);
+    }
+
+    25% {
+        width: 100%;
+        background: radial-gradient(circle, rgba(49, 49, 51, 1) 24%, rgb(82, 80, 80) 81%);
+    }
+
+    75% {
+        width: 100%;
+        background: radial-gradient(circle, rgba(39, 39, 41, 0.1) 24%, rgba(0, 0, 0, 0.1) 81%);
+    }
+
+    100% {
+        width: 100%;
+        background-color: transparent;
+    }
+}
+.skills{
+   
+    margin: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    background: rgba(39, 37, 37, 0.479);
+    
+}
+
+.skill1:hover .overlay-desc{
+   height: 300px;
+   cursor: pointer;
+}
+.skill2:hover .overlay-desc{
+    height: 300px;
+    cursor: pointer;
+}
+.skill3:hover .overlay-desc{
+    height: 300px;
+    cursor: pointer;
+}
+.skill1,.skill2,.skill3{
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    
+    background: rgba(39, 37, 37, 0.479);
+
+}
+.skill3 img{
+    margin-left: 50px;
+}
+.skills h1{
+    padding: 30px;
+    color: white;
+}
+.overlay-desc{
+    border-radius: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.664);
+    z-index: 2;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ overflow: hidden;
+    width: 300px;
+    backdrop-filter: blur(10px);
+
+   transition: .5s ease-in-out;
+    height: 0;
+    
+}
+
+.overlay-desc .skill-range{
+    height: 20px;
+    border-radius: 20px;
+    width: 250px;
+    background-color: white;
+}
+.overlay-desc .know-range{
+    height: 20px;
+    text-align: center;
+    z-index: 2;
+    border-radius: 20px;
+    width: 225px;
+    background-color: rgb(16, 199, 16);
+}
+.overlay-desc .exp-range{
+    height: 20px;
+    z-index: 2;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    background-color: rgb(103, 179, 32);
+}
+.overlay-desc .know-rangejs{
+    height: 20px;
+    text-align: center;
+    z-index: 2;
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgb(182, 35, 35);
+}
+.overlay-desc .exp-rangejs{
+    height: 20px;
+    z-index: 2;
+    border-radius: 20px;
+    text-align: center;
+    width: 100px;
+    background-color: rgb(233, 12, 12);
+}
+.overlay-desc p{
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+.projectarea{
+    background: rgba(39, 37, 37, 0.479);
+height: 400px;
+margin: 30px;
+border-radius: 50px;
+}
+.projectarea h1{
+ padding: 30px;
+ color: white;
+ height: 30px;
+}
+.project-container{
+    display: flex;
+   
+   
+  
+}
+.project{
+    margin: 20px;
+    height: 250px;
+    display: flex;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+.img-project{
+   
+    background: rgba(39, 37, 37, 0.479);
+
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+}
+.img-project h2{
+    margin-top: 50px;
+   position: relative;
+transition: 1s ease;
+cursor: pointer;
+font-weight: bold;
+height: 200px;
+   width: 400px;
+   display: flex;
+   justify-content: center;
+}
+.hover:hover{
+width: 150px;
+}
+.image-project img{
+    margin-left: -150px;
+}
+
+.amazon{
+margin-top: 70px;
+}
+.netflix{
+    margin-top: 15px;
+}
+.description{
+    background: rgba(39, 37, 37, 0.685);
+    border-left: 3px solid rgb(48, 46, 46);
+
+}
+
+.description h6{
+    margin: 5px;
+
+font-size: 1rem;
+font-weight: 100;
+color: bisque;
+}
+.description p{
+  margin: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer{
+    height: 100px;
+    background: rgba(39, 37, 37, 0.479);
+    border-radius: 70px 70px 0 0;
+}
+footer ul{
+   
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer ul li{
+    margin-top: 30px;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    
+}
+
+footer ul li a{
+font-size: 1.4rem;
+color: white;
+text-decoration: none;
+
+}
+.facebook{
+font-size: 3rem;
+}
+.insta{
+font-size: 3rem;
+
+}
+.twitter{
+font-size: 3rem;
+}
+.facebook:hover{
+  fill: blue;
+    }
+.insta:hover{
+fill: url('#insta');
+    }
+.twitter:hover{
+  fill: rgb(0, 102, 255);
+    }
+    #time{
+        font-size: 0.9rem;
+        font-weight: lighter;
+        cursor: none;
+
+    }
+
+@media screen and (max-width:800px) {
+    .menu ul {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .menu ul {
+        margin-left: 5%;
+    }
+
+    .menu button {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:945px) {
+    .menu button {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:657px) {
+    .menu ul {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width:592px) {
+    .menu .signin {
+        margin-left: -200px;
+    }
+
+    .img img {
+        height: 150px;
+        width: 150px;
+    }
+    .img
+
+    .info {
+        margin-top: 42px;
+        padding: 14px;
+    }
+    #element{
+        font-size: 1rem;
+    }
+
+    .hello {
+        font-size: 1rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .button button {
+        font-size: 1rem;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .info-container {
+        height: 300px;
+    }
+
+}
+@media  screen and (max-width:440px) {
+    .skills{
+        height: 900px;
+        flex-direction: column;
+    }
+    .open-close{
+        margin-left: 33px;
+        font-size: 1.3rem;
+    }
+    .open{
+        font-size: 3rem;
+    }
+    .title{
+        margin-left: -42px;
+    }
+    .education-inner{
+        font-size: 0.5rem;
+        padding: 7px;
+        height: 170px;
+        line-height: 20px;
+    }
+    .close{
+        font-size: 3rem;
+    }
+    .projectarea {
+        height: 950px;
+    }
+    .projectarea h1{
+    font-size: 1.2rem;
+    }
+    .image-title img{
+        height: 100px;
+        width: 100px;
+    }
+    .image-title h1{
+        font-size: 1.5rem;
+    }
+    .skill1,.skill2,.skill3{
+        height: 270px;
+    }
+    .education-hide h1{
+font-size: 1.5rem;
+    }
+    .project-container{
+        flex-direction: column;
+    }
+    .project{
+        width: 300px;
+    }
+    .img-project h2{
+        width: 302px;
+    }
+    .description p{
+font-size: 1rem;
+margin: 0px;
+    }
+    .description h6{
+font-size: 0.8rem;
+    }
+    nav ul{
+        margin-left: 20%;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .menu .signin {
+        margin-left: -300px;
+    }
+
+    .img {
+        margin-top: 30px;
+    }
+
+    .img img {
+        height: 130px;
+        width: 130px;
+
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    .hello {
+        font-size: 0.7rem;
+    }
+
+    .name {
+        font-size: 0.7rem;
+    }
+
+    #element {
+        font-size: 0.7rem;
+    }
+
+    .button button {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:737px) {
+    .menu ul {
+        display: none;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .menu button {
+        margin-left: 500px;
+    }
+
+}
+
+@media screen and (max-width:697px) {
+    .menu button {
+        margin-left: 400px;
+    }
+    .tooltip-text{
+        margin-left: 189px;
+    }
+
+}

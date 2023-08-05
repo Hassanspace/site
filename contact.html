@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="web dev.png" type="image/x-icon">
+  <title>Contact | HASSAN RASSOL</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: rgb(39, 39, 41);
+      background: radial-gradient(circle, rgba(39, 39, 41, 1) 24%, rgba(0, 0, 0, 1) 81%);
+    }
+
+    .container {
+      box-shadow: 0px 4px 8px 9px rgba(0, 0, 0, 0.9);
+      border-radius: 10px;
+      background: rgb(39, 39, 41);
+      background: radial-gradient(circle, rgba(39, 39, 41, 1) 24%, rgba(0, 0, 0, 0.6) 81%);
+      padding: 20px;
+      color: white;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      width: 370px;
+    }
+
+    label {
+      padding: 10px;
+      display: block;
+      font-weight: bold;
+    }
+
+    input {
+      background: rgb(39, 39, 41);
+      background: radial-gradient(circle, rgba(39, 39, 41, 0.6) 24%, rgba(0, 0, 0, 0.6) 81%);
+    }
+
+    input:focus {
+      color: white;
+    }
+
+    textarea:focus {
+      color: white;
+    }
+
+    textarea {
+
+      background: rgb(39, 39, 41);
+      background: radial-gradient(circle, rgba(39, 39, 41, 0.6) 24%, rgba(0, 0, 0, 0.6) 81%);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      font-weight: bold;
+      color: #fff;
+      background: rgb(39, 39, 41);
+      background: radial-gradient(circle, rgba(39, 39, 41, 0.6) 24%, rgba(0, 0, 0, 0.6) 81%);
+      margin-left: 10px;
+      font-size: 1.2rem;
+     
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background: rgb(31, 31, 32);
+    background: radial-gradient(circle, rgba(39,39,41,0.1) 24%, rgba(0,0,0,0.1) 81%);
+        
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 600px) {
+
+      /* Adjust the form container for smaller screens */
+      .container {
+        max-width: 320px;
+        padding: 10px;
+      }
+
+      /* Center the form elements on smaller screens */
+      .form-group {
+        text-align: center;
+        width: 280px;
+      }
+
+      /* Adjust the button width on smaller screens */
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        // You can add your form submission logic here (e.g., sending data to a server).
+        // For this example, the form is not actually submitted since there's no server-side processing.
+        alert("Form submitted successfully!");
+        contactForm.reset();
+      });
+    });
+
+  </script>
+</body>
+
+</html>

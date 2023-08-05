@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="web dev.png" type="image/x-icon">
+    <title>HASSAN RASOOL | Web developer , Programmer</title>
+</head>
+
+<body>
+
+    <div class="menu" id="top">
+        <span class="openbtn" onclick="openmenu()"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 448 512">
+                <style>
+                    svg {
+                        fill: #ffffff
+                    }
+                </style>
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg></span>
+
+        <ul>
+            <li><a href="" class="animate-line">Home</a></li>
+            <li><a href="#skills" class="animate-line">Services</a></li>
+            <li><a href="" class="animate-line">About</a></li>
+            <li><a href="contact.html" target="_blank" class="animate-line">Contact</a></li>
+        </ul>
+        <div class="hover-text signin"><button>signin</button>
+            <span class="tooltip-text" id="bottom">signin or sign up to get connected with us</span>
+          </div>
+    </div>
+    <nav id="mynav">
+        <span class="closebtn" onclick="closemenu()">&times;</span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#skills">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="info-container">
+        <div class="info">
+            <div class="hello">
+                <h1>Hi,</h1>
+            </div>
+            <div class="name">
+                <h2>I am <span id="font">HASSAN</span> </h2>
+            </div>
+            <div id="element"></div>
+            <div class="button">
+                <a href="cv sample.jpg" download> <button class="cv">Download CV</button></a>
+                <a href="hireme.html" target="_blank"> <button class="hire">Hire Me</button></a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="dev.png" alt="" height="380px" width="400px">
+        </div>
+    </main>
+    <div class="skills" id="skills">
+
+        <div class="skill1">
+            <div class="image-title">
+
+                <img src="html.png" alt="" height="150px" width="150px">
+                <h1>HTML</h1>
+
+
+            </div>
+            <div class="overlay-desc">
+
+                <p>Knowledge:</p>
+                <div class="skill-range">
+                    <div class="know-range">90%</div>
+                </div>
+                <p>Experience:</p>
+                <div class="skill-range">
+                    <div class="exp-range">80%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skill2">
+            <div class="image-title">
+
+                <img src="css.png" alt="" height="150px" width="150px">
+                <h1>CSS</h1>
+
+
+            </div>
+            <div class="overlay-desc">
+
+                <p>Knowledge:</p>
+                <div class="skill-range">
+                    <div class="know-range">90%</div>
+                </div>
+                <p>Experience:</p>
+                <div class="skill-range">
+                    <div class="exp-range">80%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skill3">
+            <div class="image-title">
+
+                <img src="javascript.png" alt="" height="150px" width="150px">
+                <h1>JAVASCRIPT</h1>
+
+
+            </div>
+            <div class="overlay-desc">
+
+                <p>Knowledge:</p>
+                <div class="skill-range">
+                    <div class="know-rangejs">60%</div>
+                </div>
+                <p>Experience:</p>
+                <div class="skill-range">
+                    <div class="exp-rangejs">40%</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="education-hide">
+        <h1>EDUCATION</h1>
+        <div class="open-close">
+            <div class="open" onclick="openeducation()">&#8659;</div>
+            <div class="close" onclick="closeeducation()">&#8657;</div>
+        </div>
+    </div>
+    <div class="education">
+        <div class="title">
+            <p onclick="fscandbsoff() " class="element element1">Matric</p>
+            <p onclick="matricandbsoff()" class="element element2">FSC</p>
+            <p onclick="matricandfscoff()" class="element element2">Bs</p>
+        </div>
+
+        <div class="education-inner">
+            <div class="matric">
+                <h2>School:</h2>
+                <p>THE EDUCATORS SAHIWAL</p>
+                <h2>YEAR OF STUDYING:</h2>
+                <p>2018-2020</p>
+                <h2>MARKS:</h2>
+                <p>1062/1100</p>
+            </div>
+            <div class="fsc">
+                <h2>College:</h2>
+                <p>DPS SAHIWAL</p>
+                <h2>YEAR OF STUDYING:</h2>
+                <p>2020-2022</p>
+                <h2>MARKS:</h2>
+                <p>900/1100</p>
+            </div>
+            <div class="graduation">
+                <h2>University:</h2>
+                <p>COMSATS SAHIWAL</p>
+                <h2>YEAR OF STUDYING:</h2>
+                <p>2022-STILL GOING</p>
+                <h2>MARKS/CGPA:</h2>
+                <p>3.5-CGPA</p>
+            </div>
+        </div>
+    </div>
+    <div class="projectarea">
+        <h1>PROJECTS ONLY FRONTEND</h1>
+        <div class="project-container">
+
+            <div class="project1 project">
+                <div class="img-project">
+                    <img src="foodmania.png" alt="" height="110px" width="110px">
+                    <h2 class="hover"> Food Mania</h2>
+                </div>
+                <div class="description">
+                    <p>NAME:</p>
+                    <h6>HASSAN Food Mania</h6>
+                    <P>DATE OF CREATION</P>
+                    <h6>11-01-2023</h6>
+                    <p>DESCRIPTION</p>
+                    <h6>I have used the basics of Html And CSS to create this site and also tried to make it responsive
+                        by adding media queries</h6>
+
+                </div>
+            </div>
+            <div class="project2 project">
+                <div class="img-project">
+                    <img src="amazon clone.png" alt="" height="70px" width="110px" class="amazon">
+                    <h2 class="hover">AMAZON clone</h2>
+                </div>
+                <div class="description">
+
+                    <p>NAME:</p>
+                    <h6>AMAZON</h6>
+                    <P>DATE OF CREATION</P>
+                    <h6>11-01-2023</h6>
+                    <p>DESCRIPTION</p>
+                    <h6>I have used the basics of Html And CSS to create this site and </h6>
+
+                </div>
+            </div>
+            <div class="project3 project">
+                <div class="img-project">
+                    <img src="netflix clone.png" alt="" height="130px" width="150px" class="netflix">
+                    <h2 class="hover">NETFLIX clone</h2>
+                </div>
+                <div class="description">
+                    <p>NAME:</p>
+                    <h6>NETFLIX</h6>
+                    <P>DATE OF CREATION</P>
+                    <h6>11-01-2023</h6>
+                    <p>DESCRIPTION</p>
+                    <h6>I have used the basics of Html And CSS to create this site </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projectarea">
+        <h1></h1>
+        <div class="project-container">
+
+            <div class="project1 project">
+                <div class="img-project">
+                    <img src="foodmania.png" alt="" height="110px" width="110px">
+                    <h2 class="hover"> Food Mania</h2>
+                </div>
+                <div class="description">
+                    <p>NAME:</p>
+                    <h6>HASSAN Food Mania</h6>
+                    <P>DATE OF CREATION</P>
+                    <h6>11-01-2023</h6>
+                    <p>DESCRIPTION</p>
+                    <h6>I have used the basics of Html And CSS to create this site and also tried to make it responsive
+                        by adding media queries</h6>
+
+                </div>
+            </div>
+            <div class="project2 project">
+                <div class="img-project">
+                    <img src="amazon clone.png" alt="" height="70px" width="110px" class="amazon">
+                    <h2 class="hover">AMAZON clone</h2>
+                </div>
+                <div class="description">
+
+                    <p>NAME:</p>
+                    <h6>AMAZON</h6>
+                    <P>DATE OF CREATION</P>
+                    <h6>11-01-2023</h6>
+                    <p>DESCRIPTION</p>
+                    <h6>I have used the basics of Html And CSS to create this site and </h6>
+
+                </div>
+            </div>
+            <div class="project3 project">
+                <div class="img-project">
+                    <img src="netflix clone.png" alt="" height="130px" width="150px" class="netflix">
+                    <h2 class="hover">NETFLIX clone</h2>
+                </div>
+                <div class="description">
+                    <p>NAME:</p>
+                    <h6>NETFLIX</h6>
+                    <P>DATE OF CREATION</P>
+                    <h6>11-01-2023</h6>
+                    <p>DESCRIPTION</p>
+                    <h6>I have used the basics of Html And CSS to create this site </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>Social media Contact: </li>
+            <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
+                        class="facebook"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <radialGradient id="insta" r="150%" cx="30%" cy="107%">
+                            <stop stop-color="#fdf497" offset="0" />
+                            <stop stop-color="#fdf497" offset="0.05" />
+                            <stop stop-color="#fd5949" offset="0.45" />
+                            <stop stop-color="#d6249f" offset="0.6" />
+                            <stop stop-color="#285AEB" offset="0.9" />
+                          </radialGradient>
+                        <style>
+                            svg {
+                                fill: #ffffff
+                               
+                            }
+                           
+                        </style>
+                        <path
+                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
+                </a></li>
+            <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
+                        class="twitter"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #ffffff
+                            }
+                        </style>
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                    </svg>
+                </a></li>
+            <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
+                        class="insta"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #ffffff
+                            }
+                        </style>
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a></li>
+            <li><a href="#top">
+                BACK TO TOP <br>
+                <span id="time" style="color: #ffffff;"></span>
+       
+            </a></li>
+        </ul>
+       
+    </footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+
+</html>
