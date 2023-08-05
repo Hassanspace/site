@@ -430,10 +430,9 @@ nav ul li a:hover {
     background: rgba(39, 37, 37, 0.479);
     
 }
-
 .skill1:hover .overlay-desc{
-   height: 300px;
-   cursor: pointer;
+    height: 300px;
+    cursor: pointer;
 }
 .skill2:hover .overlay-desc{
     height: 300px;
@@ -443,6 +442,7 @@ nav ul li a:hover {
     height: 300px;
     cursor: pointer;
 }
+
 .skill1,.skill2,.skill3{
     display: flex;
     overflow: hidden;
@@ -454,7 +454,7 @@ nav ul li a:hover {
     width: 300px;
     border-radius: 20px;
     
-    background: rgba(39, 37, 37, 0.479);
+    background: rgba(39, 37, 37, 0.575);
 
 }
 .skill3 img{
@@ -542,6 +542,13 @@ border-radius: 50px;
    
   
 }
+h3{
+    color: white;
+    margin-left: 10px;
+}
+.skill3 h3{
+    margin-left: 50px;
+}
 .project{
     margin: 20px;
     height: 250px;
@@ -549,11 +556,12 @@ border-radius: 50px;
     width: 400px;
     overflow: hidden;
     border-radius: 20px;
+    background: rgba(39, 37, 37, 0.849);
    
 }
 .img-project{
    
-    background: rgba(39, 37, 37, 0.479);
+    
 
     display: flex;
     justify-content: center;
@@ -571,6 +579,9 @@ height: 200px;
    width: 400px;
    display: flex;
    justify-content: center;
+}
+.project{
+    background-color: rgba(0, 0, 0, 0.527);
 }
 .hover:hover{
 width: 150px;
@@ -785,8 +796,33 @@ font-size: 0.8rem;
     nav ul{
         margin-left: 20%;
     }
-
+    .twitter{
+font-size: 1.5rem;
+    }
+    .facebook{
+        font-size: 1.5rem;
+    }
+.insta{
+    font-size: 1.5rem;
 }
+#time{
+    font-size: 5px;
+}
+footer{
+    height: 80px;
+}
+footer ul li{
+    font-size: 0.7rem;
+}
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer ul li a{
+    font-size: 1rem;
+}
+}
+
 
 @media screen and (max-width:320px) {
     .menu .signin {
